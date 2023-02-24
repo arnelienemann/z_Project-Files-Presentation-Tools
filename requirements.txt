@@ -1,0 +1,15 @@
+streamlit
+pandas
+numpy
+seaborn 
+matplotlib 
+pyparsing
+wordcloud 
+python-pptx 
+xlrd 
+openpyxl
+langid
+langdetect
+translate
+googletrans 
+
