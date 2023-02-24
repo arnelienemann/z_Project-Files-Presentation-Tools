@@ -197,7 +197,7 @@ def app():
             
             end_slide = prs.slides.add_slide(end_slide_layout)
             end_slide.shapes.title.text = "Thank you"
-            end_slide.shapes[1].text ="Contact \nArne Lienemann \nConsumer Insights | Global Portfolio Management \nArne.Lienemann@Sennheiser-ce.com"
+            end_slide.shapes[1].text ="Contact \nYour Name \nYour function \nyour@email.com"
 
             prs.save('data-reportautomation/newppt.pptx')
             st.write("Step 4: Download the final presentation as .pptx file.")
