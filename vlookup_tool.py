@@ -3,7 +3,7 @@ import pandas as pd
 
 def app():
 
-    st.header("Merge Erika and Rogator Data")
+    st.header("How to: Merge Erika and Rogator Data")
 
     # Allow the user to upload the first Excel file
     uploaded_file1 = st.file_uploader("Choose the Rogator Excel file (.xls):")

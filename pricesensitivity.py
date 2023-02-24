@@ -14,9 +14,10 @@ from pptx.dml.color import ColorFormat, RGBColor
 
 def app():
 
-    st.header("Price Sensitivity Meter")
-    st.write("This tool allows you to analysis the results of a pricing survey that you conducted. Simply put the raw data of the 4 van werstendorp questions into a Excel (.xsl) file and drag & drop it below.")
-    st.write("The columns of your Excel should be ordered and named correctly: [Too Cheap, Cheap, Too Expensive, Expensive]")
+    st.header("How to: Report PSM results")
+    st.write("This tool allows you to analysis the results of a pricing survey that you conducted. Simply put the raw data of the 4 van werstendorp questions into a Excel (.xls) file and drag & drop it below.")
+    st.write("The columns of your Excel should be ordered and named correctly: ")
+    st.write("[Too Cheap, Cheap, Too Expensive, Expensive]")
 
     def pdf(df, col):
         
@@ -161,7 +162,8 @@ def app():
         prs.save('data-pricesensitivity/temp_results.pptx')
 
         #with open(file_path, 'rb') as my_file:
+        st.write("Click 'Save' to save the ppt file to your download folder.")
         with open('data-pricesensitivity/temp_results.pptx', 'rb') as my_file:
-            st.download_button(label = 'Download', data = my_file, file_name = 'Price Sensitivity Meter.pptx') 
+            st.download_button(label = 'Save', data = my_file, file_name = 'Price Sensitivity Meter.pptx') 
 
 #python -m streamlit run app.py
