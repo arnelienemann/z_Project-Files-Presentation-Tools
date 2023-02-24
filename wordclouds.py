@@ -28,7 +28,7 @@ from pptx.dml.color import ColorFormat, RGBColor
 def app():
 
     #uploaded_file = st.file_uploader("Choose a file")
-    st.title("Create a Wordcloud")
+    st.title("How to: Create a Wordcloud")
     question_text = "Word counts"
     #question_text = st.text_input(label="Enter your question here:", value="Question number 1:")
     text = st.text_area(label="Paste your text here:", value="abc")
