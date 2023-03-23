@@ -17,7 +17,7 @@ def app():
     st.header("How to: Report PSM results")
     st.write("This tool allows you to analysis the results of a pricing survey that you conducted. Simply put the raw data of the 4 van werstendorp questions into a Excel (.xls) file and drag & drop it below.")
     st.write("The columns of your Excel should be ordered and named correctly: ")
-    st.write("[Too Cheap, Cheap, Too Expensive, Expensive]")
+    st.write("[Too Cheap, Cheap, Expensive, Too Expensive]")
 
     def pdf(df, col):
         
@@ -74,7 +74,7 @@ def app():
 
     uploaded_file = st.file_uploader("Choose a file")
     if uploaded_file is not None:
-        dataframe = pd.read_excel(uploaded_file, names=["Cheap","Expensive","Too Expensive", "Too Cheap"])
+        dataframe = pd.read_excel(uploaded_file, names=["Too Cheap", "Cheap","Expensive","Too Expensive"])
         data = dataframe
 
         #example data
