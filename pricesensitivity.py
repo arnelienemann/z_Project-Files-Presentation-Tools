@@ -75,7 +75,7 @@ def app():
     uploaded_file = st.file_uploader("Choose a file")
     if uploaded_file is not None:
         dataframe = pd.read_excel(uploaded_file, names=["Too Cheap", "Cheap","Expensive","Too Expensive"])
-        data = dataframe
+        data = int(dataframe)
 
         #example data
         #data = pd.read_excel("data.xls", names=["Cheap","Expensive","Too Expensive", "Too Cheap"])
